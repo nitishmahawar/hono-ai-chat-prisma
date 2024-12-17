@@ -1,0 +1,22 @@
+meta {
+  name: Chat
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/chat
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "messages":[
+      {
+        "role":"user",
+        "content":"Tell me something that I know"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Update Conversation Title
+  type: http
+  seq: 7
+}
+
+patch {
+  url: http://localhost:3000/api/chat/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: cm4raszti0005td8gqwxwlf0h
+}
+
+body:json {
+  {
+    "title":"Write python code for SLM"
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Sign Up
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/auth/sign-up/email
+  body: multipartForm
+  auth: none
+}
+
+body:json {
+  {
+    
+  }
+}
+
+body:multipart-form {
+  name: Nitish Mahawar
+  email: nitishmahawar112@gmail.com
+  password: Nitish@7426
+}

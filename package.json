@@ -1,0 +1,29 @@
+{
+  "name": "hono-ai-chat-prisma",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/index.js",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@ai-sdk/groq": "^1.0.8",
+    "@hono/node-server": "^1.13.7",
+    "@hono/zod-validator": "^0.4.2",
+    "@prisma/client": "6.0.1",
+    "ai": "^4.0.18",
+    "better-auth": "^1.0.21",
+    "hono": "^4.6.14",
+    "zod": "^3.24.1",
+    "zod-error": "^1.5.0",
+    "zod-validation-error": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "prisma": "6.0.1",
+    "tsc-alias": "^1.8.10",
+    "tsx": "^4.7.1",
+    "typescript": "^5.7.2"
+  }
+}
